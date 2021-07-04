@@ -1,0 +1,22 @@
+name: Chat
+description: Change the chat formatting, also does nicknames.
+version: 0.1.0
+
+author: viral32111
+website: https://viral32111.com
+
+main: com.viral32111.chat.Chat
+api-version: 1.17
+prefix: Chat
+
+commands:
+    nick:
+        description: Set your nickname.
+        permission: chat.nickname
+        permission-message: Sorry, you cannot use this command!
+        usage: "/<command>"
+
+permissions:
+    chat.nickname:
+        description: Allows a player to set their nickname.
+        default: true
