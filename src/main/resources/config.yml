@@ -1,0 +1,24 @@
+# None of these do anything yet because I cba to code the config file stuff
+
+# The custom format for chat
+# Supports legacy formatting codes
+# Placeholders are {nickname} for the player's nickname and {message} for their message
+#chat-format: '<{nickname}> {message}'
+
+# Should hover for more information boxes be added in chat for the player's nickname?
+#chat-popups: true
+
+# Should the player's name in the tab list be set to their nickname?
+#tab-list: true
+
+# Should the join message use the player's nickname?
+#join-message: true
+
+# Should the quit message use the player's nickname?
+#quit-message: true
+
+# Should the death message use the player's nickname?
+#death-message: true
+
+# Should the advancement message use the player's nickname?
+#advancement-message: true

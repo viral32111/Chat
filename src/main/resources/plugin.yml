@@ -8,15 +8,27 @@ website: https://viral32111.com
 main: com.viral32111.chat.Chat
 api-version: 1.17
 prefix: Chat
+depend:
+ - LuckPerms
 
 commands:
     nick:
-        description: Set your nickname.
-        permission: chat.nickname
+        description: Set or clear your nickname.
+        permission: chat.nick
         permission-message: Sorry, you cannot use this command!
-        usage: "/<command>"
+        usage: "/<command> [nickname]"
+
+    setnick:
+        description: Set or clear another player's nickname.
+        permission: chat.setnick
+        permission-message: Sorry, you cannot use this command!
+        usage: "/<command> <player> [nickname]"
 
 permissions:
-    chat.nickname:
-        description: Allows a player to set their nickname.
+    chat.nick:
+        description: Allows a player to set or clear their nickname.
         default: true
+
+    chat.setnick:
+        description: Allows a player to set or clear another player's nickname.
+        default: false
